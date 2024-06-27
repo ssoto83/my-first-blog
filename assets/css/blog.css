@@ -2,10 +2,18 @@ body {
     padding: 25px;
     color: black;
     font-size: 25px;
-    background-color: rgb(243, 235, 243);
-}button {
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s;
+}
+
+.dark-mode body {
+    background-color: #333; /* Change background color for dark mode */
+    color: rgb(7, 32, 253); /* Change text color for dark mode */
+}
+
+button {
     padding: 0.5rem 1rem;
-    background-color: #f70aeb;
+    background-color: #0a2df7;
     color: white;
     border: none;
     cursor: pointer;
@@ -16,11 +24,12 @@ button:hover {
 }
 
 .blog-post {
-    background: rgb(231, 173, 217);
+    background: rgb(144, 145, 143);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    color: black;
 }
 
 .toggle-container {
@@ -55,7 +64,7 @@ button:hover {
 
 .dark-mode {
     background-color: #333;
-    color: rgb(151, 14, 128);
+    color: rgb(51, 134, 19);
 }
 
 .slider:before {
@@ -80,4 +89,6 @@ input:checked + .slider:before {
 footer {
     text-align:start;
     padding: 1rem;
+   display: flex;
+   flex-direction: column;
 }
