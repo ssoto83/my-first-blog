@@ -1,0 +1,83 @@
+body {
+    padding: 25px;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(243, 235, 243);
+}button {
+    padding: 0.5rem 1rem;
+    background-color: #f70aeb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.blog-post {
+    background: rgb(231, 173, 217);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 34px;
+   }
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: rgb(151, 14, 128);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2e504d;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+footer {
+    text-align:start;
+    padding: 1rem;
+}
