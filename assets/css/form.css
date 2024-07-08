@@ -3,4 +3,5 @@ body {
     color: black;
     font-size: 25px;
     background-color: rgb(213, 247, 193);
+    overflow:hidden;
 }

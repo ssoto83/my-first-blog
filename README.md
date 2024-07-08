@@ -34,8 +34,6 @@ THEN I am presented with a link to the developer's portfolio.
 ## URL
 https://ssoto83.github.io/my-first-blog/
 
-
-
 ## Mock-up
 ![Alt text](./assets/Form.page.png)
 ![Alt text](./assets/Past.blogs.png)
