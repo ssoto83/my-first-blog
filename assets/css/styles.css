@@ -1,9 +1,14 @@
-/* body {
+body {
+    height: 100%;
     padding: 25px;
     color: black;
     font-size: 25px;
     background-color: rgb(213, 247, 193);
-} */
+}
+
+main {
+    display: flexbox;
+}
 
 section {
     display: flex;
@@ -25,41 +30,4 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-main {
-    display: flexbox;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 0 auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(239, 247, 234);
-
-}
-
-label {
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 8px;
-}
-
-textarea {
-    width: 100%;
-    max-width: 100%;
-    
-}
-text {
-    width: auto;
-    background-color: green;
 }
