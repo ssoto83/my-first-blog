@@ -1,4 +1,5 @@
 document.getElementById('blogForm').addEventListener('submit', function(event) {
+    // to prevent the page from refreshing
     event.preventDefault();
     
     const username = document.getElementById('username').value;
@@ -12,14 +13,14 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
             content
         };
 
-        // Save to localStorage
+        // Saving username, blog tittle and blog content to localStorage 
         let posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
         posts.push(post);
         localStorage.setItem('blogPosts', JSON.stringify(posts));
 
-        // Redirect to blog.html
+        // Redirecting to blog.html
         window.location.href = 'blog.html';
     } else {
-        alert('Please complete all fields.');
+        alert('Please fill out this field');
     }
 });

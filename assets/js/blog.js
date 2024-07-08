@@ -1,24 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-
-    const blogPostsContainer = document.getElementById('blogPosts');
-    
-    posts.forEach(post => {
-        const postElement = document.createElement('div');
-        postElement.classList.add('blog-post');
-        postElement.innerHTML = `
-            <h2>${post.title}</h2>
-            <p>${post.content}</p>
-            <p>By: ${post.username}</p>
-        `;
-        blogPostsContainer.appendChild(postElement);
-    });
-});
-
+// Function to go back to the first page.
 function goBack() {
     window.history.back();
 }
 
+// function to switch on and off dark mode
 function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle('dark-mode');
